@@ -25,7 +25,7 @@ def login_screen():
     if st.button("Log in"):
         # if  username in st.secrets['user'] and password==st.secrets["passwords"] and username==st.secrets['user']:
         st.balloons()
-        print(USER_CREDENTIALS)
+
         if username in USER_CREDENTIALS and password == USER_CREDENTIALS[username]:
             st.session_state.is_logged_in = True
             st.session_state.username = username
